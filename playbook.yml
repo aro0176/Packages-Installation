@@ -1,0 +1,10 @@
+---
+ - name: Automatisation des installations paquets
+   hosts: "{{ host }}"
+   remote_user: "{{ user }}"
+   become: yes
+   
+  roles:
+    - Install
+   # - Install_Nginx
+... 

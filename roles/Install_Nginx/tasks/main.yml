@@ -1,0 +1,17 @@
+---
+ - name: installation Nginx
+   apt: 
+     name: "{{ item }}"
+     update_cache: yes
+     state: present
+   loop: "{{ package }}"
+   when: os_family == "Ubuntu"
+
+ - name: Start
+   ansible.builtin.service:
+     name: nginx
+     state: started
+     enabled: True
+   when: os_family == "Ubuntu"
+...
+

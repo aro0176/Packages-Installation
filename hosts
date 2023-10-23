@@ -1,0 +1,8 @@
+[node]
+
+
+[node:vars]
+user = 
+host = 
+paquets = ['nginx','btop','net-tools',...]
+os_family = RedHat or Ubuntu

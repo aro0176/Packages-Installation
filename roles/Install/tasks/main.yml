@@ -1,0 +1,26 @@
+---
+ - name: Installations Paquets famille RedHat
+   apt: 
+     name: "{{ item }}"
+     update_cache: yes
+     state: present
+   loop: "{{ package }}"
+   when: os_family == "RedHat"
+
+ - name: Installations Paquets famille Ubun ou Deb
+   apt:
+     name: "{{ item }}"
+     update_cache: yes
+     state: present
+   loop: "{{ package }}"
+   when: os_family == "Ubuntu"
+
+ - name: Installations Paquets famille Ubun ou Deb
+   apt:
+     name: "{{ item }}"
+     update_cache: yes
+     state: present
+   loop: "{{ package }}"
+   when: not (os_family == "Ubuntu" or os_family == "RedHat")
+...
+
