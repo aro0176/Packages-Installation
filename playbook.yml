@@ -4,7 +4,7 @@
    remote_user: "{{ user }}"
    become: yes
    
-  roles:
-    - Install
-   # - Install_Nginx
+   roles:
+     - Install
+    # - Install_Nginx
 ... 
