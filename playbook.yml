@@ -1,6 +1,6 @@
 ---
  - name: Automatisation des installations paquets
-   hosts: "{{ host }}"
+   hosts: node
    remote_user: "{{ user }}"
    become: yes
    
