@@ -1,8 +1,7 @@
 [node]
-
+192.168.56.14
 
 [node:vars]
-user = 
-host = 
+user = webserver
 paquets = ['nginx','btop','net-tools',...]
-os_family = RedHat or Ubuntu
+os_family = Ubuntu
