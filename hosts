@@ -3,5 +3,5 @@
 
 [node:vars]
 user = webserver
-paquets = ['nginx']
+paquets = ['nginx','git']
 os_family = Ubuntu
