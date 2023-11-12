@@ -1,6 +1,6 @@
 ---
  - name: Installations Paquets famille RedHat
-   apt: 
+   yum: 
      name: "{{ item }}"
      update_cache: yes
      state: present
