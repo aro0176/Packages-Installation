@@ -3,5 +3,5 @@
 
 [node:vars]
 user = webserver
-paquets = ['nginx','btop','net-tools',...]
+paquets = ['nginx']
 os_family = Ubuntu
